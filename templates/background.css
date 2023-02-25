@@ -1,0 +1,6 @@
+body {
+  background-image: url('../images/backgrnd.jpeg');
+  background-size: cover; /* This will make the image cover the entire background */
+  background-position: center; /* This will center the image */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
+}
