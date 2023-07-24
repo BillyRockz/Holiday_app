@@ -47,8 +47,8 @@
 </head>
 <body>
   <div class="container">
-    <h2>User Information Form</h2>
-    <form>
+    <h2>Search for any holiday</h2>
+    <form method="POST" action="/holiday_calendar">
       <div class="form-group">
         <label for="day">Day:</label>
         <input type="text" id="day" name="day" placeholder="e.g: 22" required>
@@ -65,10 +65,10 @@
         <label for="country">Country:</label>
         <select id="country" name="country" placeholder="e.g US" required>
           <option value="" selected disabled>Select your country</option>
-          <option value="US">United States</option>
-          <option value="CA">Canada</option>
-          <option value="UK">United Kingdom</option>
-          <option value="AU">Australia</option>
+          <option value="us">United States</option>
+          <option value="ca">Canada</option>
+          <option value="uk">United Kingdom</option>
+          <option value="au">Australia</option>
           <!-- Add more countries here as needed -->
         </select>
       </div>
