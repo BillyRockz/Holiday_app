@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search for any Holiday</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+    .form-group input[type="text"],
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-group button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-group button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>User Information Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="day">Day:</label>
+        <input type="text" id="day" name="day" placeholder="e.g: 22" required>
+      </div>
+      <div class="form-group">
+        <label for="month">Month:</label>
+        <input type="text" id="month" name="month" placeholder="e.g: 08" required>
+      </div>
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="text" id="year" name="year" placeholder="e.g: 1995" required>
+      </div>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country" name="country" placeholder="e.g US" required>
+          <option value="" selected disabled>Select your country</option>
+          <option value="US">United States</option>
+          <option value="CA">Canada</option>
+          <option value="UK">United Kingdom</option>
+          <option value="AU">Australia</option>
+          <!-- Add more countries here as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
