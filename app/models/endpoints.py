@@ -2,7 +2,6 @@ from flask import request, render_template, redirect, url_for
 from app.views.components import Endpoints
 #from app.views.menu import HomeMenu
 from app import app
-import html
 
 
 @app.route("/holiday_calendar", methods=["GET", "POST"])

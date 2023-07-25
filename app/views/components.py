@@ -1,4 +1,3 @@
-from app.apis import endpoints
 from flask import jsonify, make_response, request, json
 import requests
 
@@ -47,7 +46,7 @@ class Endpoints():
                 msg = f"API call failed with error: {response.status_code}"
                 raise Exception(msg)
         except:
-            msg : "an error ocurred!"
+            msg = "an error ocurred!"
             Exception(msg)
 
     def get_json(self, final_url):
